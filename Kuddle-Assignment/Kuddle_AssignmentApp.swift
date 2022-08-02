@@ -11,7 +11,7 @@ import SwiftUI
 struct Kuddle_AssignmentApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+           LoginView()
         }
     }
 }
