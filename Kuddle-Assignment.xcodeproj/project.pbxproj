@@ -11,6 +11,13 @@
 		1E9E708228996E9000CEA8FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E708128996E9000CEA8FA /* ContentView.swift */; };
 		1E9E708428996E9200CEA8FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E9E708328996E9200CEA8FA /* Assets.xcassets */; };
 		1E9E708728996E9200CEA8FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E9E708628996E9200CEA8FA /* Preview Assets.xcassets */; };
+		1E9E709128996F0100CEA8FA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E709028996F0100CEA8FA /* LoginView.swift */; };
+		1E9E709328996F2D00CEA8FA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E709228996F2D00CEA8FA /* HomeView.swift */; };
+		1E9E7095289971F100CEA8FA /* ClassModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E7094289971F100CEA8FA /* ClassModel.swift */; };
+		1E9E70972899725C00CEA8FA /* ClassViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E70962899725C00CEA8FA /* ClassViewModel.swift */; };
+		1E9E70992899734400CEA8FA /* YogaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E70982899734400CEA8FA /* YogaView.swift */; };
+		1E9E709B2899748500CEA8FA /* GymView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E709A2899748500CEA8FA /* GymView.swift */; };
+		1E9E709D2899749000CEA8FA /* DanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E709C2899749000CEA8FA /* DanceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		1E9E708128996E9000CEA8FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1E9E708328996E9200CEA8FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E9E708628996E9200CEA8FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1E9E709028996F0100CEA8FA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		1E9E709228996F2D00CEA8FA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1E9E7094289971F100CEA8FA /* ClassModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassModel.swift; sourceTree = "<group>"; };
+		1E9E70962899725C00CEA8FA /* ClassViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassViewModel.swift; sourceTree = "<group>"; };
+		1E9E70982899734400CEA8FA /* YogaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YogaView.swift; sourceTree = "<group>"; };
+		1E9E709A2899748500CEA8FA /* GymView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymView.swift; sourceTree = "<group>"; };
+		1E9E709C2899749000CEA8FA /* DanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +65,10 @@
 		1E9E707E28996E9000CEA8FA /* Kuddle-Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				1E9E708F28996EE900CEA8FA /* ViewModel */,
+				1E9E708E28996EE300CEA8FA /* View */,
+				1E9E708D28996EDB00CEA8FA /* Model */,
 				1E9E707F28996E9000CEA8FA /* Kuddle_AssignmentApp.swift */,
-				1E9E708128996E9000CEA8FA /* ContentView.swift */,
 				1E9E708328996E9200CEA8FA /* Assets.xcassets */,
 				1E9E708528996E9200CEA8FA /* Preview Content */,
 			);
@@ -65,6 +81,35 @@
 				1E9E708628996E9200CEA8FA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1E9E708D28996EDB00CEA8FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1E9E7094289971F100CEA8FA /* ClassModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1E9E708E28996EE300CEA8FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1E9E708128996E9000CEA8FA /* ContentView.swift */,
+				1E9E709028996F0100CEA8FA /* LoginView.swift */,
+				1E9E709228996F2D00CEA8FA /* HomeView.swift */,
+				1E9E70982899734400CEA8FA /* YogaView.swift */,
+				1E9E709A2899748500CEA8FA /* GymView.swift */,
+				1E9E709C2899749000CEA8FA /* DanceView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1E9E708F28996EE900CEA8FA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1E9E70962899725C00CEA8FA /* ClassViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +182,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E9E709D2899749000CEA8FA /* DanceView.swift in Sources */,
+				1E9E709B2899748500CEA8FA /* GymView.swift in Sources */,
+				1E9E709128996F0100CEA8FA /* LoginView.swift in Sources */,
+				1E9E70972899725C00CEA8FA /* ClassViewModel.swift in Sources */,
+				1E9E709328996F2D00CEA8FA /* HomeView.swift in Sources */,
 				1E9E708228996E9000CEA8FA /* ContentView.swift in Sources */,
+				1E9E7095289971F100CEA8FA /* ClassModel.swift in Sources */,
+				1E9E70992899734400CEA8FA /* YogaView.swift in Sources */,
 				1E9E708028996E9000CEA8FA /* Kuddle_AssignmentApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
