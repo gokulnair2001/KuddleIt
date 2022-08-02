@@ -16,8 +16,15 @@ struct YogaView: View {
             VStack {
                 
                 Text("Attendees")
+                    .bold()
                 if !vm.YogaData.isEmpty {
                     List(vm.YogaData[0].attendees, id: \.self) { people in
+                        Text(people)
+                    }
+                    
+                    Text("Waiting list")
+                        .bold()
+                    List(vm.YogaData[0].waitingList, id: \.self) { people in
                         Text(people)
                     }
                 }
@@ -37,6 +44,9 @@ struct YogaView: View {
                 }
             }
             .navigationTitle("Yoga")
+            .alert(vm.message, isPresented: vm.$isEligible) {
+                Button("Ok", role: .cancel){}
+            }
     }
 }
 
